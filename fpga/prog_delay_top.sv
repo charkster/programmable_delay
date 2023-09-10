@@ -1,8 +1,8 @@
 // "signal_in" will be synchronized and then put through an edge detect
 // when an edge is seen the fast counter will start counting up to a programmable "delay_value"
 // when the counter has reached "delay_value" the delayed_out will sample the synhronized "signal_in"
-// the assumption is that "signal_in" will not change before it reaches the "delay_value" counter
-// the rising delay and falling delay is presently symetrical (another "delay_value" could be added
+// the assumption is that "signal_in" will not change before it reaches the "delay_value" count
+// the rising delay and falling delay is presently symetrical (another "delay_value" could be added)
 
 module prog_delay_top (
   input  logic  clk_100mhz,
