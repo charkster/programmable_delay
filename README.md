@@ -9,6 +9,6 @@ Pin 1 is synchronized BTN1 output, pin 2 is the signal_in input and pin 3 is the
 
 The sample Python code uses the pyftdi module... the generic serial module could be used, but I have better reliability with pyftdi.
 
-I did try this RTL on my Tang Nano 9k, but the implementation had problems... I though it might be the programmable delay clock-crossing, but when I used a static value for the delay it still did not work. Anyways, Gowin's tool gave a bad implementation and I don't want to debug it further when the CMOD A7 works perfectly.
+I did try this RTL on my Tang Nano 9k, but the implementation had problems... I though it might be the programmable delay clock-crossing, but when I used a static value for the delay it still did not work. Anyways, Gowin's tool gave a bad implementation and I don't want to debug it further when Vivado's CMOD A7 implementation works perfectly. If you have installed openFPGAloader, the included bash script can be used to program the CMOD A7's flash memory.
 
 This helped me to resolve a PCB board timing problem, and that was my motivation for building this.
